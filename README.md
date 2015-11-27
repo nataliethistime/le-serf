@@ -25,6 +25,9 @@ All dependencies for the web site are specified as `devDependencies` so that the
 
 # Changes
 
+### 1.1.1 (2015-11-27)
+- Messed up the `package.json`.
+
 ### 1.1.0 (2015-11-27)
 - Started keeping a changes log.
 

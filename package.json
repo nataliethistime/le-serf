@@ -5,6 +5,14 @@
   "main": "index.js",
   "author": "Nathan McCallum <onevasari@gmail.com> (https://github.com/1vasari)",
   "license": "MIT",
+  "engines": {
+    "node": "5.x.x",
+    "npm": "3.x.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/le-serf/le-serf"
+  },
   "scripts": {
     "test": "node scripts/lacuna-test.js && mocha && snazzy"
   },

@@ -22,3 +22,8 @@ Because they [don't support mixins](https://facebook.github.io/react/docs/reusab
 > package.json
 
 All dependencies for the web site are specified as `devDependencies` so that they don't get included in the published npm module.
+
+# Changes
+
+### 1.1.0
+- Started keeping a changes log.

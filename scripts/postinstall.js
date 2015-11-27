@@ -19,7 +19,7 @@ if (process.env.LE_SERF_PRODUCTION) {
     'gulp clear',
     'gulp build'
   ]))
-} else if (process.env.HAS_JOSH_K_SEAL_OF_APPROVAL) {
+} else if (process.env.TRAVIS && process.env.CI) {
   // Don't build anything on Travis.
   process.exit()
 } else {

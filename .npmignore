@@ -1,3 +1,7 @@
-lib/web/
-test/
+.gitignore
+.travis.yml
+Gulpfile.js
 index.html
+lib/web/
+Procfile
+test/

@@ -19,6 +19,9 @@ if (process.env.LE_SERF_PRODUCTION) {
     'gulp clear',
     'gulp build'
   ]))
+} else if (process.env.HAS_JOSH_K_SEAL_OF_APPROVAL) {
+  // Don't build anything on Travis.
+  process.exit()
 } else {
   runCommand(buildCommand([
     'bower prune',

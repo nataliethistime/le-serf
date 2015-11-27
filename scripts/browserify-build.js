@@ -1,17 +1,20 @@
 'use strict'
 
+let gulp = require('gulp')
 let gutil = require('gulp-util')
 let uglify = require('gulp-uglify')
 
 let path = require('path')
-let fs = require('fs')
 let mkdirp = require('mkdirp')
 
 let browserify = require('browserify')
 let watchify = require('watchify')
 let babelify = require('babelify')
 
-const outputLocation = path.join(__dirname, '../build/bundle.js')
+let source = require('vinyl-source-stream')
+let buffer = require('vinyl-buffer')
+
+const outputLocation = path.join(__dirname, '../build')
 mkdirp.sync(path.dirname(outputLocation))
 
 let handleBundle = (b) => {
@@ -24,8 +27,12 @@ let handleBundle = (b) => {
       )
       this.emit('end')
     })
-    .pipe(process.env.LE_SERF_PRODUCTION ? uglify() : gutil.noop())
-    .pipe(fs.createWriteStream(outputLocation))
+    .pipe(source('bundle.js'))
+    .pipe(buffer())
+    .pipe(process.env.LE_SERF_PRODUCTION
+      ? uglify().on('error', gutil.log)
+      : gutil.noop())
+    .pipe(gulp.dest(outputLocation))
 }
 
 let getBrowserifyOptions = (options) => {

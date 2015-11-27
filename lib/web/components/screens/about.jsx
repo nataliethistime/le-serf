@@ -25,7 +25,7 @@ let AboutScreen = React.createClass({
         </p>
 
         <p>
-          Le serf is an <a target='_blank' href='https://github.com/le-serf'>open source</a> creation by <a target='_blank' href='http://github.com/1vasari'>1vasari</a>.
+          Le serf is an <a target='_blank' href='https://github.com/le-serf/le-serf'>open source</a> creation by <a target='_blank' href='http://github.com/1vasari'>1vasari</a>.
         </p>
       </div>
     )

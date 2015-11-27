@@ -25,5 +25,8 @@ All dependencies for the web site are specified as `devDependencies` so that the
 
 # Changes
 
-### 1.1.0
+### 1.1.0 (2015-11-27)
 - Started keeping a changes log.
+
+### 1.0.0
+- Collected all the code from all the different repositories into this one repository.

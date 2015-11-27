@@ -17,7 +17,7 @@ if (process.env.LE_SERF_PRODUCTION) {
     'bower prune',
     'bower install',
     'gulp clear',
-    'gulp build-production'
+    'gulp build'
   ]))
 } else {
   runCommand(buildCommand([

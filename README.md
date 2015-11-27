@@ -25,7 +25,7 @@ All dependencies for the web site are specified as `devDependencies` so that the
 
 # Changes
 
-### (2015-11-27)
+### 1.1.2 (2015-11-27)
 - Fixed `.npmignore`
 
 ### 1.1.1 (2015-11-27)

@@ -1,7 +1,7 @@
 'use strict'
 
-let lacuna = require('../lib/lacuna/test-instance')
-let log = require('../lib/log')
+let lacuna = require('../../lib/lacuna/test-instance')
+let log = require('../../lib/log')
 
 let _ = require('lodash')
 

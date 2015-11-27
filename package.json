@@ -14,7 +14,8 @@
     "url": "https://github.com/le-serf/le-serf"
   },
   "scripts": {
-    "test": "node scripts/lacuna-test.js && mocha && snazzy"
+    "test": "node test/scripts/lacuna-test.js && mocha && snazzy",
+    "postinstall": "node scripts/postinstall.js"
   },
   "bin": {
     "le-serf": "bin/le-serf.js"
@@ -26,11 +27,12 @@
     "colors": "1.1.2",
     "commander": "2.9.0",
     "inquirer": "0.11.0",
+    "is-there": "4.2.0",
     "lodash": "3.10.1",
     "memory-cache": "0.1.4",
+    "moment": "2.10.6",
     "moment-duration-format": "1.3.0",
     "moment-range": "2.0.3",
-    "moment": "2.10.6",
     "request": "2.67.0",
     "user-home": "2.0.0"
   },
@@ -38,6 +40,27 @@
     "chai": "3.4.1",
     "mocha": "2.3.4",
     "snazzy": "2.0.1",
-    "standard": "5.4.1"
+    "standard": "5.4.1",
+    "babel": "6.1.18",
+    "babel-preset-es2015": "6.1.18",
+    "babel-preset-react": "6.1.18",
+    "babelify": "7.2.0",
+    "bower": "1.6.5",
+    "browserify": "12.0.1",
+    "del": "2.1.0",
+    "express": "4.13.3",
+    "gulp": "3.9.0",
+    "gulp-rename": "1.2.2",
+    "gulp-uglify": "1.5.1",
+    "gulp-util": "3.0.7",
+    "hbs": "4.0.0",
+    "history": "1.13.1",
+    "mkdirp": "0.5.1",
+    "react": "0.14.3",
+    "react-dom": "0.14.3",
+    "react-router": "1.0.0",
+    "reflux": "0.3.0",
+    "store": "1.3.17",
+    "watchify": "3.6.1"
   }
 }

@@ -7,13 +7,12 @@ let runner = require('../lib/cli/task-runner')
 let list = (str) => str.split(',')
 
 program
-  .option('-l, --loop', 'upgrade buildings forever (hopefully)')
+  .option('-l, --loop', 'wait for builds to finish and run again')
   .option('-p --planet [name]',
     'specify planet(s) to upgrade buildings on', list)
   .option('-s --skip [planet name]',
     'specify planet(s) to skip', list)
-  .option('-a --all-colonies', 'just upgrade buildings on all colonies')
   .parse(process.argv)
 
-let options = _.pick(program, 'loop planet skip allColonies'.split(' '))
+let options = _.pick(program, ['loop', 'planet', 'skip'])
 runner.run('upgrade-buildings', options)

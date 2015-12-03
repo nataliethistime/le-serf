@@ -12,7 +12,7 @@ let _ = require('lodash')
 let tasks = require('../lib/tasks').getAllTasks()
 
 let testTask = (task) => {
-  describe(task.title, () => {
+  describe(`${task.title} task definition`, () => {
     it('should have a name', () => {
       expect(task.name).to.be.a('string')
     })
@@ -23,6 +23,14 @@ let testTask = (task) => {
 
     it('should have a description', () => {
       expect(task.description).to.be.a('string')
+    })
+
+    it('should have a defaults object', () => {
+      expect(task.defaults).to.be.a('object')
+    })
+
+    it('should have a validateOptions method', () => {
+      expect(task.TaskClass.prototype.validateOptions).to.be.a('function')
     })
 
     it('should have a run method', () => {

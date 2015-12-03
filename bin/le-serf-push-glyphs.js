@@ -15,8 +15,4 @@ if (program.allColonies) {
   program.from = '__all_colonies__'
 }
 
-if (!program.to) {
-  program.help()
-}
-
 runner.run('push-glyphs', _.pick(program, ['from', 'to']))

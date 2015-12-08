@@ -55,7 +55,7 @@
     "mocha": "2.3.4",
     "react": "0.14.3",
     "react-dom": "0.14.3",
-    "react-router": "1.0.0",
+    "react-router": "1.0.2",
     "reflux": "0.3.0",
     "snazzy": "2.0.1",
     "standard": "5.4.1",

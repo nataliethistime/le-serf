@@ -2,6 +2,7 @@
 
 let lacuna = require('../../lib/lacuna/test-instance')
 let log = require('../../lib/log')
+let util = require('../../lib/util')
 
 let _ = require('lodash')
 
@@ -31,5 +32,5 @@ lacuna.authenticate().then((sessionId) => {
 }).then(() => {
   log.info('Done')
 }).catch((err) => {
-  log.error(err)
+  util.handleError(err)
 })

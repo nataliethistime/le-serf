@@ -7,8 +7,6 @@ let $ = window.jQuery
 
 let EmpireStore = require('../../stores/empire')
 
-const allColonies = '__all_colonies__'
-
 let PushGlyphsConfig = React.createClass({
 
   mixins: [
@@ -17,7 +15,9 @@ let PushGlyphsConfig = React.createClass({
 
   getOptions () {
     return {
-      from: this.state.empire.colonies[this.refs.fromList.value],
+      from: this.refs.fromList.value === 'all'
+        ? 'all'
+        : this.state.empire.colonies[this.refs.fromList.value],
       to: this.state.empire.colonies[this.refs.toList.value]
     }
   },
@@ -44,7 +44,7 @@ let PushGlyphsConfig = React.createClass({
 
     // Add in the magic 'all colonies' option
     fromList.push(
-      <option value={allColonies} key={allColonies}>All Colonies</option>
+      <option value='all' key='all'>All Colonies</option>
     )
 
     let toList = _.map(names, (name) => {
@@ -59,7 +59,7 @@ let PushGlyphsConfig = React.createClass({
           <select
             className='form-control'
             ref='fromList'
-            defaultValue={allColonies}
+            defaultValue='all'
           >
             {fromList}
           </select>

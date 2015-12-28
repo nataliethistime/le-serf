@@ -9,17 +9,15 @@
 
 # Notes
 
-*A few notes on various oddities in the code.*
-
-> Don't use ES6 Modules
+**Don't use ES6 Modules**
 
 Because I don't like them - CommonJS modules seem cleaner to me.
 
-> Don't use ES6 Classes to define React Components
+**Don't use ES6 Classes to define React Components**
 
 Because they [don't support mixins](https://facebook.github.io/react/docs/reusable-components.html#no-mixins). ES6 Classes are being used for other things, though.
 
-> package.json
+**package.json**
 
 All dependencies for the web site are specified as `devDependencies` so that they don't get included in the published npm module.
 

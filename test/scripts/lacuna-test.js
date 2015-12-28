@@ -32,5 +32,5 @@ lacuna.authenticate().then((sessionId) => {
 }).then(() => {
   log.info('Done')
 }).catch((err) => {
-  util.handleError(err)
+  util.handlePromiseError(err)
 })

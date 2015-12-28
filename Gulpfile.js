@@ -5,6 +5,7 @@ let gulp = require('gulp')
 let del = require('del')
 
 let browserifyBuild = require('./scripts/browserify-build')
+let runCommand = require('./scripts/run-command')
 let server = require('./scripts/server')
 
 gulp.task('build', () => {
@@ -25,4 +26,8 @@ gulp.task('dev', ['serve'], () => {
 
 gulp.task('serve', (done) => {
   server({production: false}, done)
+})
+
+gulp.task('docs', (done) => {
+  runCommand('jsdoc --configure .jsdoc.json', done)
 })

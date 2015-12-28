@@ -15,7 +15,8 @@
   },
   "scripts": {
     "test": "node test/scripts/lacuna-test.js && mocha && snazzy",
-    "postinstall": "node scripts/postinstall.js"
+    "postinstall": "node scripts/postinstall.js",
+    "postpublish": "gulp publish-docs"
   },
   "bin": {
     "le-serf": "bin/le-serf.js"

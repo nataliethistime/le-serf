@@ -1,12 +1,15 @@
 'use strict'
 
 let gulp = require('gulp')
+let ghPages = require('gulp-gh-pages')
 
 let del = require('del')
 
 let browserifyBuild = require('./scripts/browserify-build')
 let runCommand = require('./scripts/run-command')
 let server = require('./scripts/server')
+
+let moment = require('moment')
 
 gulp.task('build', () => {
   return browserifyBuild({watch: false})
@@ -30,4 +33,13 @@ gulp.task('serve', (done) => {
 
 gulp.task('docs', (done) => {
   runCommand('jsdoc --configure .jsdoc.json', done)
+})
+
+gulp.task('publish-docs', ['docs'], () => {
+  return gulp.src('./docs/**/*')
+    .pipe(ghPages({
+      remoteUrl: 'https://github.com/le-serf/le-serf.github.io',
+      branch: 'master',
+      message: 'Update documentation ' + moment().format('dddd, Do MMMM HH:mm:ss')
+    }))
 })

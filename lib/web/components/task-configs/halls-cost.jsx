@@ -3,17 +3,19 @@
 let React = require('react')
 let _ = require('lodash')
 
+let util = require('../../../util')
+
 let HallsCost = React.createClass({
 
   getOptions () {
     return {
-      start: this.refs.startList.value * 1,
-      end: this.refs.endList.value * 1
+      start: util.int(this.refs.startList.value),
+      end: util.int(this.refs.endList.value)
     }
   },
 
   render () {
-    let levelsList = _.chain(_.range(1, 31))
+    let list = _.chain(_.range(1, 31))
       .map((num) => {
         return <option value={num} key={num}>{num}</option>
       })
@@ -24,13 +26,13 @@ let HallsCost = React.createClass({
         <div className='form-group'>
           <label>Start</label>
           <select className='form-control' ref='startList'>
-            {levelsList}
+            {list}
           </select>
         </div>
         <div className='form-group'>
           <label>End</label>
           <select className='form-control' defaultValue={30} ref='endList'>
-            {levelsList}
+            {list}
           </select>
         </div>
       </div>

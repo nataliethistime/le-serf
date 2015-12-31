@@ -27,10 +27,18 @@ let Task = React.createClass({
 
   handleShow () {
     $(this.refs.modal).modal('show')
+
+    if (typeof this.refs.config.onWindowShow === 'function') {
+      this.refs.config.onWindowShow()
+    }
   },
 
   handleHide () {
     $(this.refs.modal).modal('hide')
+
+    if (typeof this.refs.config.onWindowHide === 'function') {
+      this.refs.config.onWindowHide()
+    }
   },
 
   handleButtonClick () {

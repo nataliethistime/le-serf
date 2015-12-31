@@ -23,6 +23,31 @@ All dependencies for the web site are specified as `devDependencies` so that the
 
 # Changes
 
+### 1.2.0
+
+**Bugs**
+- `upgrade-buildings` now upgrades groups of the same type of building in order of level (lowest to highest).
+
+**CLI**
+- Rationalized all the different means of specifying a planet. Now there's only one: `--planet`.
+
+**General**
+- Tasks handle invalid arguments properly.
+- Implemented handling of Captchas all round.
+
+**Tasks**
+- Implemented new `build-ships` task.
+- Implemented new `push-buildings-up` task.
+- Implemented new `spy-trainer` task.
+- Implemented new `view-laws` task.
+
+**Technical**
+- Started using [Greenkeeper](http://greenkeeper.io/) to keep dependencies up-to-date.
+- Lots of refactoring.
+- Started documenting the project using [JSDoc](http://usejsdoc.org/).
+- Handle session IDs better by not logging into the game every time a task is run.
+- Travis CI now tests on Node `5.0`
+
 ### 1.1.2 (2015-11-27)
 - Fixed `.npmignore`
 

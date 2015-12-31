@@ -4,8 +4,8 @@ let React = require('react')
 
 let CaptchaActions = require('../../actions/captcha')
 
-let Captcha = require('../task-config-helpers/captcha')
-let ColonyList = require('../task-config-helpers/colony-list')
+let Captcha = require('./helpers/captcha')
+let ColonyList = require('./helpers/colony-list')
 
 let SpyTrainerConfig = React.createClass({
 

@@ -6,7 +6,7 @@ let $ = window.jQuery
 
 let BodyList = require('./body-list')
 
-let EmpireStore = require('../../stores/empire')
+let EmpireStore = require('../../../stores/empire')
 
 let ColonyList = React.createClass({
 

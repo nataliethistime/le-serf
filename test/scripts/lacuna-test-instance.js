@@ -1,6 +1,6 @@
 'use strict'
 
-var Lacuna = require('./index')
+var Lacuna = require('../../lib/lacuna')
 
 var lacuna = new Lacuna({
   empire: 'lacuna.js Test',

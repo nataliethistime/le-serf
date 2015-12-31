@@ -3,9 +3,9 @@
 let React = require('react')
 let Reflux = require('reflux')
 
-let CaptchaActions = require('../../actions/captcha')
+let CaptchaActions = require('../../../actions/captcha')
 
-let CaptchaStore = require('../../stores/captcha')
+let CaptchaStore = require('../../../stores/captcha')
 
 let Captcha = React.createClass({
   mixins: [

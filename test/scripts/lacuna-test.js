@@ -1,6 +1,6 @@
 'use strict'
 
-let lacuna = require('../../lib/lacuna/test-instance')
+let lacuna = require('./lacuna-test-instance')
 let log = require('../../lib/log')
 let util = require('../../lib/util')
 

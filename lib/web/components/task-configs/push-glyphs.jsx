@@ -2,7 +2,7 @@
 
 let React = require('react')
 
-let ColonyList = require('../task-config-helpers/colony-list')
+let ColonyList = require('./helpers/colony-list')
 
 let PushGlyphsConfig = React.createClass({
 

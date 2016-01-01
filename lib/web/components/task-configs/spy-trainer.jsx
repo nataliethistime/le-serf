@@ -2,35 +2,18 @@
 
 let React = require('react')
 
-let CaptchaActions = require('../../actions/captcha')
-
 let Captcha = require('./helpers/captcha')
 let ColonyList = require('./helpers/colony-list')
+let DryRunCheckbox = require('./helpers/dry-run-checkbox')
 
 let SpyTrainerConfig = React.createClass({
-
-  getInitialState () {
-    return {
-      dryRunChecked: false
-    }
-  },
-
-  toggleDryRun () {
-    this.setState({
-      dryRunChecked: !this.state.dryRunChecked
-    })
-  },
 
   getOptions () {
     return {
       planet: this.refs.list.getSelected().name,
       skill: this.refs.skill.value,
-      dryRun: this.state.dryRunChecked
+      dryRun: this.refs.dryRun.isChecked()
     }
-  },
-
-  onWindowShow () {
-    CaptchaActions.clear()
   },
 
   render () {
@@ -51,31 +34,9 @@ let SpyTrainerConfig = React.createClass({
           </select>
         </div>
 
-        <div className='form-group'>
-          <div className='checkbox'>
-            <label>
-              <input
-                type='checkbox'
-                checked={this.state.dryRunChecked}
-                onChange={this.toggleDryRun}
-              >
-              </input>
-              Dry run
-            </label>
-            <span className='help-block'>
-              Runs the task and shows what would happen without actually changing anything.
-            </span>
-          </div>
-        </div>
-
-        {
-          !this.state.dryRunChecked
-            ? (
-              <div className='form-group'>
-                <Captcha />
-              </div>
-            ) : ''
-        }
+        <DryRunCheckbox ref='dryRun'>
+          <Captcha />
+        </DryRunCheckbox>
       </div>
     )
   }

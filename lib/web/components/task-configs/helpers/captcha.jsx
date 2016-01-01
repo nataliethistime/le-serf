@@ -32,7 +32,10 @@ let Captcha = React.createClass({
   },
 
   componentDidUpdate (prevProps, prevState) {
-    if (prevState.captcha.url !== this.state.captcha.url) {
+    let oldUrl = prevState.captcha.url
+    let newUrl = this.state.captcha.url
+
+    if (newUrl && oldUrl !== newUrl) {
       let img = new window.Image()
       img.src = this.state.captcha.url
       img.onLoad = this.handleCaptchaLoaded()

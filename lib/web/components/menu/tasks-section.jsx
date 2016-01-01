@@ -8,6 +8,7 @@ let tasks = require('../../../../lib/tasks').getTasksForPlatform('web')
 
 let taskConfigs = require('../task-configs')
 
+let CaptchaActions = require('../../actions/captcha')
 let RunnerActions = require('../../actions/runner')
 
 let Task = React.createClass({
@@ -27,6 +28,9 @@ let Task = React.createClass({
 
   handleShow () {
     $(this.refs.modal).modal('show')
+
+    // Reset any captcha that might be in this window.
+    CaptchaActions.clear()
 
     if (typeof this.refs.config.onWindowShow === 'function') {
       this.refs.config.onWindowShow()

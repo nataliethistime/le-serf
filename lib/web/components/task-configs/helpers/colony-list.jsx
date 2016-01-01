@@ -2,7 +2,6 @@
 
 let React = require('react')
 let Reflux = require('reflux')
-let $ = window.jQuery
 
 let BodyList = require('./body-list')
 
@@ -28,13 +27,6 @@ let ColonyList = React.createClass({
 
   getSelected () {
     return this.refs.list.getSelected()
-  },
-
-  componentDidUpdate () {
-    if (!this.props.all) {
-      let queryStr = `option[value="${this.state.empire.home_planet_id}"]`
-      $(queryStr, this.refs.list.refs.list).prop('selected', true)
-    }
   },
 
   render () {

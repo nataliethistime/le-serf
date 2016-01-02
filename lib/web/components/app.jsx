@@ -1,14 +1,10 @@
 'use strict'
 
 let React = require('react')
-let _ = require('lodash')
+
+let bootstrapper = require('../bootstrapper')
 
 let NavBar = require('./menu/nav-bar')
-
-let ConfigStore = require('../stores/config')
-
-let EmpireActions = require('../actions/empire')
-let WindowActions = require('../actions/window')
 
 let App = React.createClass({
   propTypes: {
@@ -16,13 +12,7 @@ let App = React.createClass({
   },
 
   componentDidMount () {
-    let data = ConfigStore.getData()
-
-    if (_.isEmpty(data)) {
-      WindowActions.navigate('/login')
-    } else {
-      EmpireActions.login(data)
-    }
+    bootstrapper.handleInitialLogin()
   },
 
   render () {

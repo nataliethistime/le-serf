@@ -1,8 +1,10 @@
 'use strict'
 
-let lacuna = require('./lacuna-test-instance')
+let lacuna = require('./test-instance')
 let log = require('../../lib/log')
 let util = require('../../lib/util')
+
+let cache = require('../../lib/lacuna/cache')
 
 let _ = require('lodash')
 
@@ -16,6 +18,9 @@ lacuna.authenticate().then((sessionId) => {
   return lacuna.empire.findPlanet('Preyulara')
 }).then((planet) => {
   log.info(`My home planet is: ${planet.name} (${planet.id})`)
+
+  // Kill the session to test how the client handles it.
+  cache.put('session', '')
 
   return lacuna.body.findBuilding(planet.id, 'Planetary Command Center')
 }).then((planetaryCommand) => {

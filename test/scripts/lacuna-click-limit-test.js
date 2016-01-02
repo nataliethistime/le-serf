@@ -3,7 +3,7 @@
 // This test repeatedly calls `empire.getStatus()`` so as to test retrying
 // calls when we hit the 60 clicks per minute limit.
 
-let lacuna = require('./lacuna-test-instance')
+let lacuna = require('./test-instance')
 let log = require('../../lib/log')
 
 let Promise = require('bluebird')

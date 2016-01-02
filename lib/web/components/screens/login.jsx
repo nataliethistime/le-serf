@@ -5,7 +5,7 @@ let Reflux = require('reflux')
 let _ = require('lodash')
 let $ = window.jQuery
 
-let EmpireActions = require('../../actions/empire')
+let bootstrapper = require('../../bootstrapper')
 
 let ConfigStore = require('../../stores/config')
 
@@ -33,7 +33,7 @@ let LoginScreen = React.createClass({
   },
 
   handleLogin () {
-    EmpireActions.login({
+    bootstrapper.freshLogin({
       empire: this.refs.empire.value,
       password: this.refs.password.value,
       server: this.refs.server.value

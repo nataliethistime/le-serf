@@ -45,7 +45,7 @@ let LinksSection = React.createClass({
         </li>
         <li>
           <a target='_blank' href='http://le-serf.github.io'>
-            Help
+            Documentation
           </a>
         </li>
         <li>

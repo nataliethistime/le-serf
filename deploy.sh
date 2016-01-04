@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-echo Deploying...
-
 git status
 git push origin master
 

@@ -3,6 +3,8 @@
 let React = require('react')
 let _ = require('lodash')
 
+let List = require('./list')
+
 let BodyList = React.createClass({
 
   propTypes: {
@@ -20,7 +22,7 @@ let BodyList = React.createClass({
   },
 
   getSelected () {
-    let id = this.refs.list.value
+    let id = this.refs.list.getValue()
     let name = this.props.bodies[id]
 
     if (id === 'all') {
@@ -34,9 +36,10 @@ let BodyList = React.createClass({
     let list = []
 
     if (this.props.all) {
-      list.push(
-        <option value='all' key='all'>All</option>
-      )
+      list.push({
+        name: 'All',
+        value: 'all'
+      })
     }
 
     // Invert so we can key by planet name
@@ -45,18 +48,14 @@ let BodyList = React.createClass({
 
     _.each(names, (name) => {
       let id = bodies[name]
-      list.push(
-        <option value={id} key={id}>{name}</option>
-      )
+      list.push({
+        name,
+        value: id
+      })
     })
 
     return (
-      <div>
-        <label>{this.props.label}</label>
-        <select className='form-control' ref='list'>
-          {list}
-        </select>
-      </div>
+      <List ref='list' label={this.props.label} list={list} />
     )
   }
 })

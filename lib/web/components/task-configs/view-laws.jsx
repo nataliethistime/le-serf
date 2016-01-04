@@ -2,11 +2,13 @@
 
 let React = require('react')
 
+let util = require('../../../util')
+
 let ViewLawsConfig = React.createClass({
 
   getOptions () {
     return {
-      id: this.refs.idField.value
+      id: util.int(this.refs.idField.value)
     }
   },
 

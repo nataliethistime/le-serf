@@ -50,6 +50,9 @@ All dependencies for the web site are specified as `devDependencies` so that the
 - Handle session IDs better by not logging into the game every time a task is run.
 - Travis CI now tests on Node `5.0`
 
+**Web**
+- Improved About page.
+
 ### 1.1.2
 
 **Released:** November 27th 2015

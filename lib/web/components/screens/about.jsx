@@ -2,7 +2,12 @@
 
 let React = require('react')
 
+let Gravatar = require('react-gravatar')
+
 let packageJson = require('../../../../package')
+let repoURL = packageJson.repository.url
+
+let changesLink = repoURL + '#' + packageJson.version.replace(/\./g, '')
 
 let AboutScreen = React.createClass({
   render () {
@@ -11,21 +16,19 @@ let AboutScreen = React.createClass({
         <h1>About</h1>
 
         <p>
-          Le serf version <u>{packageJson.version}</u>.
+          Le serf version <a href={changesLink} target='_blank'>{packageJson.version}</a>.
         </p>
 
         <p>
-          <img
-            src='http://i.imgur.com/iGC03h8.jpg'
-            alt='My weird face'
+          <Gravatar
+            email='onevasari@gmail.com'
+            size={200}
             className='img-circle'
-            width='157.5'
-            height='210'
-          ></img>
+          />
         </p>
 
         <p>
-          Le serf is an <a target='_blank' href='https://github.com/le-serf/le-serf'>open source</a> creation by <a target='_blank' href='http://github.com/1vasari'>1vasari</a>.
+          Le serf is an <a target='_blank' href={repoURL}>open source</a> creation by <a target='_blank' href='http://github.com/1vasari'>1vasari</a>.
         </p>
       </div>
     )

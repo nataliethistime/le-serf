@@ -25,6 +25,8 @@ All dependencies for the web site are specified as `devDependencies` so that the
 
 ### 1.2.0
 
+**Released:** To Be Released
+
 **Bugs**
 - `upgrade-buildings` now upgrades groups of the same type of building in order of level (lowest to highest).
 
@@ -48,14 +50,26 @@ All dependencies for the web site are specified as `devDependencies` so that the
 - Handle session IDs better by not logging into the game every time a task is run.
 - Travis CI now tests on Node `5.0`
 
-### 1.1.2 (2015-11-27)
+### 1.1.2
+
+**Released:** November 27th 2015
+
 - Fixed `.npmignore`
 
-### 1.1.1 (2015-11-27)
+### 1.1.1
+
+**Released:** November 27th 2015
+
 - Messed up the `package.json`.
 
-### 1.1.0 (2015-11-27)
+### 1.1.0
+
+**Released:** November 27th 2015
+
 - Started keeping a changes log.
 
 ### 1.0.0
+
+**Released:** November 27th 2015
+
 - Collected all the code from all the different repositories into this one repository.

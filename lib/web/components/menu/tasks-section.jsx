@@ -11,6 +11,8 @@ let taskConfigs = require('../task-configs')
 let CaptchaActions = require('../../actions/captcha')
 let RunnerActions = require('../../actions/runner')
 
+let RunnerStore = require('../../stores/runner')
+
 let Task = React.createClass({
   propTypes: {
     task: React.PropTypes.object.isRequired
@@ -46,6 +48,10 @@ let Task = React.createClass({
   },
 
   handleButtonClick () {
+    if (RunnerStore.isRunningTask()) {
+      return
+    }
+
     if (this.needsConfiguration()) {
       this.handleShow()
     } else {

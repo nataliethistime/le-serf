@@ -71,6 +71,7 @@ let LoginScreen = React.createClass({
             <div className='form-group'>
               <select className='form-control' ref='server'>
                 <option value='us1'>US1</option>
+                <option value='pt'>Public Test</option>
               </select>
             </div>
 

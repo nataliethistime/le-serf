@@ -24,6 +24,8 @@ let AboutScreen = React.createClass({
             email='onevasari@gmail.com'
             size={200}
             className='img-circle'
+            http={window.location.protocol === 'http:'}
+            https={window.location.protocol === 'https:'}
           />
         </p>
 

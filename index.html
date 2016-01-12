@@ -13,11 +13,27 @@
   <script type="text/javascript"
     src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
+  <script type="text/javascript"
+    src="/bower_components/messenger/build/js/messenger.min.js"></script>
+
+  <link rel="stylesheet" type="text/css"
+    href="/bower_components/messenger/build/css/messenger.css"></link>
+  <link rel="stylesheet" type="text/css"
+    href="/bower_components/messenger/build/css/messenger-theme-block.css"></link>
 
   <script type="text/javascript">
     // Le Serf checks for this variable to determine if it's running in web or CLI.
     window.LE_SERF_WEB = true
   </script>
+
+  <style type="text/css">
+    /* Fix up the messenger box to look nicer. */
+    .messenger-message {
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
+    }
+  </style>
 
   <script type="text/javascript" src="/build/bundle.js"></script>
 </head>

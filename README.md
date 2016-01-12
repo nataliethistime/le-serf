@@ -25,7 +25,7 @@ All dependencies for the web site are specified as `devDependencies` so that the
 
 ### 1.2.0
 
-**Released:** To Be Released
+**Released:** January 12th 2016
 
 **Bugs**
 - `upgrade-buildings` now upgrades groups of the same type of building in order of level (lowest to highest).

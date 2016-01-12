@@ -23,6 +23,12 @@ All dependencies for the web site are specified as `devDependencies` so that the
 
 # Changes
 
+### 1.2.1
+
+**Released:** January 12th 2016
+
+- Quick fix.
+
 ### 1.2.0
 
 **Released:** January 12th 2016

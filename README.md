@@ -23,13 +23,13 @@ All dependencies for the web site are specified as `devDependencies` so that the
 
 # Changes
 
-### 1.2.1
+## 1.2.1
 
 **Released:** January 12th 2016
 
 - Quick fix.
 
-### 1.2.0
+## 1.2.0
 
 **Released:** January 12th 2016
 
@@ -60,25 +60,25 @@ All dependencies for the web site are specified as `devDependencies` so that the
 - Handle errors on signing in. 
 - Improved About page.
 
-### 1.1.2
+## 1.1.2
 
 **Released:** November 27th 2015
 
 - Fixed `.npmignore`
 
-### 1.1.1
+## 1.1.1
 
 **Released:** November 27th 2015
 
 - Messed up the `package.json`.
 
-### 1.1.0
+## 1.1.0
 
 **Released:** November 27th 2015
 
 - Started keeping a changes log.
 
-### 1.0.0
+## 1.0.0
 
 **Released:** November 27th 2015
 

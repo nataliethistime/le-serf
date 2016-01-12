@@ -16,6 +16,9 @@ let App = require('./components/app')
 
 let history = require('./history')
 
+// Generic error handler while I'm figuring out how to do this proper.
+require('./error-handler')
+
 $(document).ready(() => {
   ReactDOM.render((
     <Router history={history}>

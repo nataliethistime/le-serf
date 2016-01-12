@@ -33,9 +33,6 @@ All dependencies for the web site are specified as `devDependencies` so that the
 **CLI**
 - Rationalized all the different means of specifying a planet. Now there's only one: `--planet`.
 
-**Web**
-- Handle errors on signing in. 
-
 **General**
 - Tasks handle invalid arguments properly.
 - Implemented handling of Captchas all round.
@@ -54,6 +51,7 @@ All dependencies for the web site are specified as `devDependencies` so that the
 - Travis CI now tests on Node `5.0`
 
 **Web**
+- Handle errors on signing in. 
 - Improved About page.
 
 ### 1.1.2

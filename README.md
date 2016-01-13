@@ -7,20 +7,6 @@
 [![Dependency Status](https://david-dm.org/le-serf/le-serf.svg)](https://david-dm.org/le-serf/le-serf)
 [![devDependency Status](https://david-dm.org/le-serf/le-serf/dev-status.svg)](https://david-dm.org/le-serf/le-serf#info=devDependencies)
 
-# Notes
-
-**Don't use ES6 Modules**
-
-Because I don't like them - CommonJS modules seem cleaner to me.
-
-**Don't use ES6 Classes to define React Components**
-
-Because they [don't support mixins](https://facebook.github.io/react/docs/reusable-components.html#no-mixins). ES6 Classes are being used for other things, though.
-
-**package.json**
-
-All dependencies for the web site are specified as `devDependencies` so that they don't get included in the published npm module.
-
 # Changes
 
 ## 1.2.1
@@ -83,3 +69,17 @@ All dependencies for the web site are specified as `devDependencies` so that the
 **Released:** November 27th 2015
 
 - Collected all the code from all the different repositories into this one repository.
+
+# Notes
+
+**Don't use ES6 Modules**
+
+Because I don't like them - CommonJS modules seem cleaner to me.
+
+**Don't use ES6 Classes to define React Components**
+
+Because they [don't support mixins](https://facebook.github.io/react/docs/reusable-components.html#no-mixins). ES6 Classes are being used for other things, though.
+
+**package.json**
+
+All dependencies for the web site are specified as `devDependencies` so that they don't get included in the published npm module.

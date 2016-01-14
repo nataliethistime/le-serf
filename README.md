@@ -9,6 +9,17 @@
 
 # Changes
 
+## 1.3.0
+
+**General**
+- General fixes and maintenance.
+
+**Tasks**
+- Implemented new `scuttle-ships` task.
+
+**Web**
+- Fixed loading of my Gravatar on the About page.
+
 ## 1.2.1
 
 **Released:** January 12th 2016
@@ -43,7 +54,7 @@
 - Travis CI now tests on Node `5.0`
 
 **Web**
-- Handle errors on signing in. 
+- Handle errors on signing in.
 - Improved About page.
 
 ## 1.1.2

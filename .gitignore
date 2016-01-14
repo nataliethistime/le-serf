@@ -30,3 +30,6 @@ build/
 bower_components
 docs/
 .publish/
+
+# I use the zed editor. It leaves these things behind.
+.zedstate

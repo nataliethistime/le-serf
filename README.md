@@ -11,15 +11,18 @@
 
 ## 1.3.0
 
+**Released:** January 15th 2016
+
 **General**
 - General fixes and maintenance.
 
 **Tasks**
 - Implemented new `scuttle-ships` task.
 - Stripped down and revamped the `spy-trainer` task.
+- General fixing of the `make-halls` task.
 
 **Web**
-- Fixed loading of my Gravatar on the About page.
+- Fixed loading of my Gravatar image on the About page.
 
 ## 1.2.1
 

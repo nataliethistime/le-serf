@@ -11,7 +11,6 @@ let SpyTrainerConfig = React.createClass({
   getOptions () {
     return {
       planet: this.refs.list.getSelected().name,
-      skill: this.refs.skill.value,
       dryRun: this.refs.dryRun.isChecked()
     }
   },
@@ -21,17 +20,6 @@ let SpyTrainerConfig = React.createClass({
       <div className='form'>
         <div className='form-group'>
           <ColonyList ref='list' />
-        </div>
-
-        <div className='form-group'>
-          <label>Skill</label>
-          <select className='form-control' ref='skill'>
-            <option value='all'>All Skills (attempts to distribute spies evenly)</option>
-            <option value='intel'>Intel Training</option>
-            <option value='mayhem'>Mayhem Training</option>
-            <option value='politics'>Politics Training</option>
-            <option value='theft'>Theft Training</option>
-          </select>
         </div>
 
         <DryRunCheckbox ref='dryRun'>

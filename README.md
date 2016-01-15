@@ -16,6 +16,7 @@
 
 **Tasks**
 - Implemented new `scuttle-ships` task.
+- Stripped down and revamped the `spy-trainer` task.
 
 **Web**
 - Fixed loading of my Gravatar on the About page.

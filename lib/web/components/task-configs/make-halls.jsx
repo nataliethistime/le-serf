@@ -16,7 +16,7 @@ let MakeHallsConfig = React.createClass({
     return (
       <div className='form'>
         <div className='form-group'>
-          <ColonyList ref='list' all={false} />
+          <ColonyList ref='list' />
         </div>
       </div>
     )

@@ -17,7 +17,7 @@ let BrandSection = React.createClass({
     e.preventDefault()
 
     if (EmpireStore.getData().name) {
-      WindowActions.navigate('/tasks')
+      WindowActions.navigate('/task-selection')
     } else {
       WindowActions.navigate('/login')
     }
@@ -39,8 +39,13 @@ let LinksSection = React.createClass({
     return (
       <ul className='nav navbar-nav navbar-left'>
         <li>
-          <Link to='/tasks'>
+          <Link to='/task-selection'>
             Tasks
+          </Link>
+        </li>
+        <li>
+          <Link to='/output'>
+            Output
           </Link>
         </li>
         <li>

@@ -14,6 +14,12 @@
 **Tasks**
 - Implemented new `docked-ships` task.
 
+**Technical**
+- The logger now outputs the log level on each line of a multiline message.
+
+**Web**
+- Vast improvements to the user interface.
+
 ## 1.3.0
 
 **Released:** January 15th 2016

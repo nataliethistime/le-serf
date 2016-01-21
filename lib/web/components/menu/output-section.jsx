@@ -57,13 +57,15 @@ let OutputSection = React.createClass({
 
   render () {
     let messages = _.map(this.state.output, (message, i) => {
-      return (
-        <Message
-          key={i}
-          level={message.level}
-          content={message.content}
-        />
-      )
+      return message.content.split('\n').map((content, i2) => {
+        return (
+          <Message
+            key={`${i}-${i2}`}
+            level={message.level}
+            content={content}
+            />
+        )
+      })
     })
 
     return (
@@ -77,7 +79,10 @@ let OutputSection = React.createClass({
           padding: 20,
           width: '100%',
           minHeight: 50,
-          overflow: 'auto'
+          overflow: 'auto',
+          fontFamily: 'monospace',
+          whiteSpace: 'pre',
+          lineHeight: 0.5
         }}>
           {messages}
         </div>

@@ -9,6 +9,11 @@
 
 # Changes
 
+## 1.4.0
+
+**Tasks**
+- Implemented new `docked-ships` task.
+
 ## 1.3.0
 
 **Released:** January 15th 2016

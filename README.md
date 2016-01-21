@@ -15,6 +15,7 @@
 - Implemented new `docked-ships` task.
 - `buildings-levels` now outputs a pretty table.
 - `buildings-types` now outputs a pretty table.
+- `view-laws` now outputs a pretty table.
 
 **Technical**
 - The logger now outputs the log level on each line of a multiline message.

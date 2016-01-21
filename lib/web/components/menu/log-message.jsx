@@ -37,7 +37,7 @@ let LogMessage = React.createClass({
 
   render () {
     if (this.props.content === '---') {
-      return <br />
+      return <br style={{lineHeight: 1}} />
     } else {
       let level = this.colorize(`${this.props.level}:`)
 

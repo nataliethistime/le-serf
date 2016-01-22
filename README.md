@@ -11,6 +11,8 @@
 
 ## 1.4.0
 
+**Released:** January 22nd 2016
+
 **Tasks**
 - Implemented new `docked-ships` task.
 - `buildings-levels` now outputs a pretty table.

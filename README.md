@@ -9,6 +9,14 @@
 
 # Changes
 
+## 2.0.0
+
+**Released**: *To Be Released*
+
+**Technical**
+- Moved `le-serf/le-serf` to `1vasari/le-serf`.
+- Changed my email and website.
+
 ## 1.4.0
 
 **Released:** January 22nd 2016

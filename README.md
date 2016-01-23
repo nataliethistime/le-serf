@@ -7,7 +7,7 @@
 [![Dependency Status](https://david-dm.org/1vasari/le-serf.svg)](https://david-dm.org/1vasari/le-serf)
 [![devDependency Status](https://david-dm.org/1vasari/le-serf/dev-status.svg)](https://david-dm.org/1vasari/le-serf#info=devDependencies)
 
-# Changes
+# Ch-Ch-Ch Changes!
 
 ## 2.0.0
 
@@ -16,6 +16,7 @@
 **Technical**
 - Moved `le-serf/le-serf` to `1vasari/le-serf`.
 - Changed my email and website.
+- Added Google Analytics
 
 ## 1.4.0
 

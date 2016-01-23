@@ -21,7 +21,7 @@ let AboutScreen = React.createClass({
 
         <p>
           <Gravatar
-            email='onevasari@gmail.com'
+            email='me@1vasari.xyz'
             size={200}
             className='img-circle'
             http={window.location.protocol === 'http:'}
@@ -30,7 +30,7 @@ let AboutScreen = React.createClass({
         </p>
 
         <p>
-          Le serf is an <a target='_blank' href={repoURL}>open source</a> creation by <a target='_blank' href='http://github.com/1vasari'>1vasari</a>.
+          Le serf is an <a target='_blank' href={repoURL}>open source</a> creation by <a target='_blank' href='http://1vasari.xyz'>1vasari</a>.
         </p>
       </div>
     )

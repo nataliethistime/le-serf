@@ -3,7 +3,7 @@
   "version": "1.4.0",
   "description": "Your trusty assistant in your Lacuna Expanse misadventures!",
   "main": "index.js",
-  "author": "Nathan McCallum <onevasari@gmail.com> (https://github.com/1vasari)",
+  "author": "Nathan McCallum <me@1vasari.xyz> (https://github.com/1vasari)",
   "license": "MIT",
   "engines": {
     "node": "5.x.x",

@@ -38,8 +38,8 @@ gulp.task('docs', (done) => {
 gulp.task('publish-docs', ['docs'], () => {
   return gulp.src('./docs/**/*')
     .pipe(ghPages({
-      remoteUrl: 'https://github.com/le-serf/le-serf.github.io',
-      branch: 'master',
+      remoteUrl: 'https://github.com/1vasari/le-serf-docs',
+      branch: 'gh-pages',
       message: 'Update documentation ' + moment().format('dddd, Do MMMM HH:mm:ss')
     }))
 })

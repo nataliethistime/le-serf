@@ -49,7 +49,7 @@ let LinksSection = React.createClass({
           </Link>
         </li>
         <li>
-          <a target='_blank' href='http://le-serf.github.io'>
+          <a target='_blank' href='http://1vasari.github.io/le-serf-docs/'>
             Documentation
           </a>
         </li>

@@ -15,6 +15,7 @@
 
 **Tasks**
 - Implemented new `docks` task.
+- `upgrade-buildings` handles low-level buildings better.
 
 **Technical**
 - Moved `le-serf/le-serf` to `1vasari/le-serf`.

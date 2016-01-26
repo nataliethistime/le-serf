@@ -19,7 +19,8 @@
 **Technical**
 - Moved `le-serf/le-serf` to `1vasari/le-serf`.
 - Changed my email and website.
-- Added Google Analytics
+- Added Google Analytics.
+- When the version number changes the website reloads itself (without cache).
 
 ## 1.4.0
 

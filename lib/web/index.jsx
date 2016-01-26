@@ -20,6 +20,20 @@ let history = require('./history')
 
 require('./error-handler')
 
+// When a release happens the index.html file may have changed. In which case we need to
+// reaload (without cache) on the client side so the user gets the changes.
+let lastLoadedVersion = window.localStorage.lastLoadedVersion
+let currentVersion = require('../../package.json').version
+
+if (lastLoadedVersion !== currentVersion) {
+  console.log('Reloading to get new version...')
+  console.log(`Last loaded version: ${lastLoadedVersion}`)
+  console.log(`Current version: ${currentVersion}`)
+
+  window.localStorage.lastLoadedVersion = currentVersion
+  window.location.reload(true)
+}
+
 $(document).ready(() => {
   let container = document.getElementById('main')
   let app = (
@@ -34,5 +48,7 @@ $(document).ready(() => {
     </Router>
   )
 
-  ReactDOM.render(app, container)
+  if (container) {
+    ReactDOM.render(app, container)
+  }
 })

@@ -15,6 +15,7 @@
 
 **Tasks**
 - Implemented new `docks` task.
+- Implemented new `spy-status` task.
 - `upgrade-buildings` handles low-level buildings better.
 
 **Technical**

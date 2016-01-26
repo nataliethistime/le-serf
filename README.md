@@ -13,6 +13,9 @@
 
 **Released**: *To Be Released*
 
+**Tasks**
+- Implemented new `docks` task.
+
 **Technical**
 - Moved `le-serf/le-serf` to `1vasari/le-serf`.
 - Changed my email and website.

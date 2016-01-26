@@ -22,6 +22,9 @@
 - Added Google Analytics.
 - When the version number changes the website reloads itself (without cache).
 
+**Web**
+- Implemented a fancy loading screen.
+
 ## 1.4.0
 
 **Released:** January 22nd 2016

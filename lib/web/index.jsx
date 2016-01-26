@@ -2,7 +2,6 @@
 
 let React = require('react')
 let ReactDOM = require('react-dom')
-let $ = window.jQuery
 
 let ReactRouter = require('react-router')
 let Router = ReactRouter.Router
@@ -34,7 +33,8 @@ if (lastLoadedVersion !== currentVersion) {
   window.location.reload(true)
 }
 
-$(document).ready(() => {
+// This function is called by the loader after it's finished doing its thing.
+window.LeSerfLoad = () => {
   let container = document.getElementById('main')
   let app = (
     <Router history={history}>
@@ -51,4 +51,4 @@ $(document).ready(() => {
   if (container) {
     ReactDOM.render(app, container)
   }
-})
+}

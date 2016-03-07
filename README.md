@@ -18,6 +18,7 @@
 - Implemented new `spy-status` task.
 - Implemented new `spy-skills` task.
 - `upgrade-buildings` handles low-level buildings better.
+- `push-buildings-up` now has an option to wait for buildings to finish upgrading.
 
 **Technical**
 - Moved `le-serf/le-serf` to `1vasari/le-serf`.

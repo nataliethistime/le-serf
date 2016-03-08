@@ -11,7 +11,7 @@
 
 ## 2.0.0
 
-**Released**: *To Be Released*
+**Released**: March 8 2016
 
 **Tasks**
 - Implemented new `docks` task.

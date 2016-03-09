@@ -9,6 +9,12 @@
 
 # Ch-Ch-Ch Changes!
 
+## 2.0.1
+
+**Released**: March 9 2016
+
+- Bug fixes.
+
 ## 2.0.0
 
 **Released**: March 8 2016

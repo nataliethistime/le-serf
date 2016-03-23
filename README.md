@@ -2,6 +2,8 @@
 
 > Your trusty assistant in your Lacuna Expanse misadventures!
 
+**Note:** as of March 2016, this project is in "maintenance mode". This means I'll only keep it running rather than add new features. This is because I am no longer a player of The Lacuna Expanse. There are breaking server changes on the horizon and when they go live none of this will work anymore. Sadly, there's not much I can do.
+
 [![Build Status](https://travis-ci.org/1vasari/le-serf.svg)](https://travis-ci.org/1vasari/le-serf)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![Dependency Status](https://david-dm.org/1vasari/le-serf.svg)](https://david-dm.org/1vasari/le-serf)

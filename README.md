@@ -11,6 +11,12 @@
 
 # Ch-Ch-Ch Changes!
 
+## 2.0.2
+
+**Released**: May 2 2016
+
+- Fixed typo in `push-buildings-up` that caused it to upgrade Space Ports higher than level 28.
+
 ## 2.0.1
 
 **Released**: March 9 2016

@@ -1,6 +1,6 @@
 {
   "name": "le-serf",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Your trusty assistant in your Lacuna Expanse misadventures!",
   "main": "index.js",
   "author": "Nathan McCallum <me@1vasari.xyz> (https://github.com/1vasari)",
